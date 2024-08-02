@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vær App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vær App</h1>
+        <input type="text" id="cityInput" placeholder="Skriv inn bynavn">
+        <button id="getWeatherBtn">Hent Vær</button>
+        <div class="not-found" style="display: none;">
+            <img src="images/404.png" alt="Not Found">
+            <p>Fant ikke værdata for den oppgitte byen</p>
+        </div>
+        <div class="weather-box" style="display: none;">
+            <img src="" alt="Weather Icon">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+        <div class="weather-details" style="display: none;">
+            <p class="humidity">Fuktighet: <span></span></p>
+            <p class="wind">Vindhastighet: <span></span></p>
+        </div>
+        <p class="location-label" style="display: none;"></p>
+        <div class="error-message"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
